@@ -1,0 +1,27 @@
+body {
+  padding-top: 50px;
+}
+
+.navbar-brand > img { 
+  margin-top: -14px !important;
+}
+
+.main-layout {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.btn-dark { 
+  background-color: #eee !important;
+  color: #000 !important;
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+  border-bottom-left-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+}
+
+.btn-dark:focus { 
+  outline: none !important;
+}

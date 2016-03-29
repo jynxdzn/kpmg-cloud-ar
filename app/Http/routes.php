@@ -2,15 +2,26 @@
 
 /*
 |--------------------------------------------------------------------------
-| Application Routes
+| KPMG Cloud AR - Content Management System version 1.0.0
 |--------------------------------------------------------------------------
 |
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// user registration - view 
+Route::get('register', 'Auth\AuthController@getRegister');
+
+// user registration - controller 
+Route::post('register', 'Auth\AuthController@postRegister');
+
+// user login - view
+Route::get('/', 'Auth\AuthController@getLogin');
+// user login - controller
+Route::post('/', 'Auth\AuthController@postLogin');
+
+// user logout - view / controller
+Route::get('logout', 'Auth\AuthController@getLogout');
+
+// dashboard - view 
+Route::get('dashboard', 'dashboard@index');
+
